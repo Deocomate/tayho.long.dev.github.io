@@ -1,0 +1,17 @@
+.button-outline-primary-custom {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: right;
+    /* Neural-1 */
+    color: #3f4042;
+    border: 2px solid #188181;
+    border-radius: 10px;
+    padding: 12px 24px;
+    &:hover{
+        background-color: #188181;
+        color: white;
+    }
+}

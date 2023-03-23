@@ -1,0 +1,31 @@
+.card-event {
+    background-color: transparent;
+    border: none;
+    .card-img-top {
+        height: 300px;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+    h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 28px;
+        /* Neural-1 */
+        color: #3f4042;
+    }
+    .card-time {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        /* identical to box height */
+        /* Neural-1 */
+        color: #3f4042;
+    }
+}
+@include responsive($md){
+    .card-event h5{
+        font-size: 25px;
+    }
+}

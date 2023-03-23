@@ -1,0 +1,24 @@
+*{
+    font-family: 'Times New Roman', Times, serif
+}
+
+@import './base/reset';
+@import './base/var';
+@import './class/bg';
+
+
+@import './func/responsive';
+@import './components/button';
+@import './components/heading';
+@import './components/paginate';
+@import './components/card';
+@import './components/slick-slider';
+@import './components/form';
+
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/su-kien';
+@import './layouts/su-kien-chi-tiet';
+@import './layouts/lien-he';
+@import './layouts/user-page';
+

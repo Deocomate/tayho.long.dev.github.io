@@ -1,0 +1,21 @@
+.paginate-custom {
+    .pagination {
+        align-items: center;
+        .page-link {
+            border: 0px solid transparent;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 26px;
+            text-align: right;
+            /* Neural-1 */
+            color: #3f4042;
+            border-radius: 10px;
+            transition: 0.5s;
+            &:hover {
+                border: 2px solid #188181;
+                border-radius: 10px;
+            }
+        }
+    }
+}

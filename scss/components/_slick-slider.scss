@@ -1,0 +1,34 @@
+.su-kien-slider-chi-tiet{
+    .slick-prev, .slick-next{
+        position: absolute;
+        top: 50%;
+        width: 70px;
+        z-index: 100;
+        transform: translate(0px,-50%);
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100000;
+        }
+    }
+    .slick-prev{
+        left: 0px;
+        transform: translateX(-50%);
+    }
+    .slick-next{
+        right: 0px;
+        transform: translateX(50%);
+    }
+}
+@include responsive($xl){
+    .su-kien-slider-chi-tiet{
+        .slick-prev, .slick-next{
+            display: none!important;
+        }
+        .su-kien-slider-chi-tiet .slick-prev img, .su-kien-slider-chi-tiet .slick-next img{
+            display: none;
+        }
+    }
+}

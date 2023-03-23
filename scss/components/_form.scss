@@ -1,0 +1,35 @@
+.form-custom-1 {
+    .form-control {
+        border: 1px solid #3f4042;
+        border-radius: 8px;
+        color: #3f4042;
+    }
+    .capcha {
+        span {
+            white-space: nowrap;
+        }
+    }
+}
+.button-submit-custom {
+    background: #188181;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 50px;
+}
+.form-group-user {
+    label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 26px;
+        color: #3f4042;
+        margin-bottom: 10px;
+    }
+    input {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #3f4042;
+    }
+}

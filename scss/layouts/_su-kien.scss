@@ -1,0 +1,63 @@
+#su-kien-banner {
+    .backgound-slider-contain {
+        background-color: #188181;
+        position: relative;
+        .su-kien-slider {
+            max-width: 1227px;
+            img {
+                width: 100%;
+                height: 718px;
+                object-fit: cover;
+            }
+        }
+        .banner-content-overlay {
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            max-width: 1000px;
+            background: rgba(90, 174, 158, 0.41);
+            border-radius: 20px;
+            .content {
+                background-color: white;
+                h1 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 33px;
+                    /* or 111% */
+                    text-transform: uppercase;
+                    /* Neural-1 */
+                    color: #3f4042;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    /* or 114% */
+                    /* Neural-1 */
+                    color: #3f4042;
+                }
+            }
+        }
+    }
+}
+
+#su-kien-list-event{
+    .background{ 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@include responsive($xl){
+    #su-kien-banner .backgound-slider-contain .banner-content-overlay{
+        // margin: 10px 20px;
+        width: 100%;
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0px;
+
+    }
+}
