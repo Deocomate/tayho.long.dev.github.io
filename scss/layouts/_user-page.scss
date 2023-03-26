@@ -75,12 +75,87 @@
         }
     }
 }
-#user-page{
-    .user-edit{
-        .top{
-            .user-img{
+#user-page {
+    .user-edit {
+        .change-pass {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 26px;
+            color: #000000;
+            margin-bottom: 35px;
+        }
+        .top {
+            .edit-user-photo {
+                position: relative;
+                .edit-photo {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    img {
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                    &:hover {
+                        background-color: #3f40426d;
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .user-img {
                 max-width: 170px;
-                margin-right: 20px;
+            }
+        }
+    }
+}
+
+#user-page {
+    .user-edit.setting {
+        .setting-key {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 26px;
+            color: #000000;
+        }
+        .switch {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 53px;
+            height: 25px;
+            cursor: pointer;
+            position: relative;
+            .switch-value {
+                width: 50%;
+                height: 100%;
+                background-color: #188181;
+                border-radius: 9px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+                &.off {
+                    left: 50%;
+                    background-color: #3f4042;
+                }
+            }
+        }
+        .lang-choose {
+            border: 1px solid rgba(63, 64, 66, 0.5);
+            border-radius: 10px;
+            .active-lang {
+                background-color: #188181;
+                color: white;
             }
         }
     }

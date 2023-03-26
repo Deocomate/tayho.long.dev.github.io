@@ -21,4 +21,11 @@ $(document).ready(function () {
         prevArrow: "<button type='button' class='slick-prev'><img src='/assets/lou_icon/prev-btn.svg'/></button>",
         nextArrow: "<button type='button' class='slick-next'><img src='/assets/lou_icon/next-btn.svg'/></button>",
     });
+    $(".edit-photo").click(function (e) { 
+        $(".file-edit-img")[0].click()
+        // console.log(1);
+    });
+    $(".switch").click(function (e) { 
+        $(this).find("div").toggleClass("off")
+    });
 });

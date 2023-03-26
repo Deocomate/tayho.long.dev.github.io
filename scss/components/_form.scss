@@ -14,7 +14,11 @@
     background: #188181;
     border-radius: 10px;
     color: white;
-    padding: 5px 50px;
+    padding: 5px 70px;
+    &:hover{
+        border:2px solid #188181;
+
+    }
 }
 .form-group-user {
     label {
@@ -31,5 +35,18 @@
         font-size: 20px;
         line-height: 24px;
         color: #3f4042;
+    }
+    .input-password {
+        input {
+            border: none;
+            outline: none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        background: #ffffff;
+        border: 1px solid rgba(63, 64, 66, 0.5);
+        border-radius: 10px;
+        padding: 15px 25px;
     }
 }

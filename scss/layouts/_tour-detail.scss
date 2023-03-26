@@ -1,0 +1,104 @@
+.time-line {
+    .header-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28.8px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #3f4042;
+    }
+    .main-menu {
+        .nav-item {
+            button {
+                border: none;
+                border-bottom: 1px solid rgba(63, 64, 66, 0.4);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 26px;
+                text-align: center;
+                color: #3f4042;
+                padding: 10px 40px;
+                &.active {
+                    border-bottom: 1px solid #188181;
+                }
+            }
+        }
+        .tab-timeline {
+            .img-left {
+                > .d-flex {
+                    justify-content: center;
+                    flex-direction: row;
+                }
+            }
+            .img-right {
+                > .d-flex {
+                    justify-content: center;
+                    flex-direction: row-reverse;
+                }
+            }
+            max-width: 975px;
+            margin: 0 auto;
+            .img-detail {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                width: 100%;
+                max-width: 428px;
+                height: 215px;
+                object-fit: cover;
+            }
+            .line-break {
+                .circle-top {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: #188181;
+                }
+                .line {
+                    height: 250px;
+                    width: 0px;
+                    background-color: white;
+                    border: 1px dashed #188181;
+                }
+            }
+            .content {
+                max-width: 428px;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    .time {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 26px;
+                        color: #000000;
+                    }
+                    h5 {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                    .title {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive($lg) {
+    .time-line .main-menu .tab-timeline .img-detail {
+        border-radius: 5px;
+    }
+    .time-line .main-menu .tab-timeline .img-left > .d-flex {
+        flex-direction: column;
+    }
+    .time-line .main-menu .tab-timeline .img-right > .d-flex {
+        flex-direction: column;
+    }
+}

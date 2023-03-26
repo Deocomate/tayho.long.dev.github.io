@@ -97,6 +97,63 @@
   color: #3f4042;
 }
 
+.tour-du-lich-card .card-top {
+  position: relative;
+}
+.tour-du-lich-card .card-top img {
+  position: relative;
+  z-index: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+.tour-du-lich-card .card-top .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.36) 100%);
+  border-radius: 20px 20px 0px 0px;
+}
+.tour-du-lich-card .card-top .card-num-day {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: "League Spartan", sans-serif;
+}
+.tour-du-lich-card .card-body {
+  background: #188181;
+  border-radius: 0px 0px 20px 20px;
+}
+.tour-du-lich-card .card-body * {
+  color: white;
+  font-family: "League Spartan";
+}
+.tour-du-lich-card .card-body h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+}
+.tour-du-lich-card .card-body .card-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.tour-du-lich-card .card-body .card-num-location span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 20px;
+}
+
 @media screen and (max-width: 767.98px) {
   .card-event h5 {
     font-size: 25px;
@@ -146,7 +203,10 @@
   background: #188181;
   border-radius: 10px;
   color: white;
-  padding: 5px 50px;
+  padding: 5px 70px;
+}
+.button-submit-custom:hover {
+  border: 2px solid #188181;
 }
 
 .form-group-user label {
@@ -164,7 +224,97 @@
   line-height: 24px;
   color: #3f4042;
 }
+.form-group-user .input-password {
+  background: #ffffff;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+.form-group-user .input-password input {
+  border: none;
+  outline: none;
+}
+.form-group-user .input-password input:focus {
+  box-shadow: none;
+}
 
+.banner-top-style-1 {
+  position: relative;
+}
+
+.form-search-tour {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.form-search-tour form {
+  background: #ffffff;
+  border: 2px solid rgba(63, 64, 66, 0.5);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 30px;
+}
+.form-search-tour .form-input .round-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+}
+.form-search-tour .form-input .round-icon::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #188181;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.form-search-tour .form-input .form-group {
+  border-right: 4px solid #188181;
+  padding-right: 20px;
+}
+.form-search-tour .form-input .form-group label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.form-search-tour .form-input .form-group input {
+  background: #ffffff;
+  border: 2px solid rgba(63, 64, 66, 0.5);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #3f4042;
+}
+.form-search-tour .form-input .form-group.no-border {
+  border: none !important;
+}
+.form-search-tour .button-form-contain button {
+  height: 100%;
+  width: 50px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .form-search-tour .form-input .form-group {
+    border-right: none;
+    padding-right: 0px;
+  }
+  .form-search-tour .button-form-contain button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
 header .top .search-input {
   background-color: white;
   display: flex;
@@ -481,9 +631,80 @@ footer .bottom-footer span {
   width: 150px;
 }
 
+#user-page .user-edit .change-pass {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+#user-page .user-edit .top .edit-user-photo {
+  position: relative;
+}
+#user-page .user-edit .top .edit-user-photo .edit-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#user-page .user-edit .top .edit-user-photo .edit-photo img {
+  opacity: 0;
+  transition: 0.5s;
+}
+#user-page .user-edit .top .edit-user-photo .edit-photo:hover {
+  background-color: rgba(63, 64, 66, 0.4274509804);
+}
+#user-page .user-edit .top .edit-user-photo .edit-photo:hover img {
+  opacity: 1;
+}
 #user-page .user-edit .top .user-img {
   max-width: 170px;
-  margin-right: 20px;
+}
+
+#user-page .user-edit.setting .setting-key {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+  color: #000000;
+}
+#user-page .user-edit.setting .switch {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 53px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+#user-page .user-edit.setting .switch .switch-value {
+  width: 50%;
+  height: 100%;
+  background-color: #188181;
+  border-radius: 9px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+#user-page .user-edit.setting .switch .switch-value.off {
+  left: 50%;
+  background-color: #3f4042;
+}
+#user-page .user-edit.setting .lang-choose {
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 10px;
+}
+#user-page .user-edit.setting .lang-choose .active-lang {
+  background-color: #188181;
+  color: white;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -511,4 +732,100 @@ footer .bottom-footer span {
     object-fit: cover;
     border-radius: 50%;
   }
+}
+.time-line .header-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.8px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #3f4042;
+}
+.time-line .main-menu .nav-item button {
+  border: none;
+  border-bottom: 1px solid rgba(63, 64, 66, 0.4);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+  text-align: center;
+  color: #3f4042;
+  padding: 10px 40px;
+}
+.time-line .main-menu .nav-item button.active {
+  border-bottom: 1px solid #188181;
+}
+.time-line .main-menu .tab-timeline {
+  max-width: 975px;
+  margin: 0 auto;
+}
+.time-line .main-menu .tab-timeline .img-left > .d-flex {
+  justify-content: center;
+  flex-direction: row;
+}
+.time-line .main-menu .tab-timeline .img-right > .d-flex {
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.time-line .main-menu .tab-timeline .img-detail {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  max-width: 428px;
+  height: 215px;
+  object-fit: cover;
+}
+.time-line .main-menu .tab-timeline .line-break .circle-top {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #188181;
+}
+.time-line .main-menu .tab-timeline .line-break .line {
+  height: 250px;
+  width: 0px;
+  background-color: white;
+  border: 1px dashed #188181;
+}
+.time-line .main-menu .tab-timeline .content {
+  max-width: 428px;
+}
+.time-line .main-menu .tab-timeline .content a {
+  color: black;
+  text-decoration: none;
+}
+.time-line .main-menu .tab-timeline .content a .time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+  color: #000000;
+}
+.time-line .main-menu .tab-timeline .content a h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  color: #000000;
+}
+.time-line .main-menu .tab-timeline .content a .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: #000000;
+}
+
+@media screen and (max-width: 991.98px) {
+  .time-line .main-menu .tab-timeline .img-detail {
+    border-radius: 5px;
+  }
+  .time-line .main-menu .tab-timeline .img-left > .d-flex {
+    flex-direction: column;
+  }
+  .time-line .main-menu .tab-timeline .img-right > .d-flex {
+    flex-direction: column;
+  }
+}
+.form-main-position .form-search-tour {
+  transform: translateY(-40px);
 }/*# sourceMappingURL=main.css.map */
