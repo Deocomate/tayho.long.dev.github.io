@@ -756,7 +756,7 @@ footer .bottom-footer span {
   border-bottom: 1px solid #188181;
 }
 .time-line .main-menu .tab-timeline {
-  max-width: 975px;
+  width: 100%;
   margin: 0 auto;
 }
 .time-line .main-menu .tab-timeline .img-left > .d-flex {
@@ -770,7 +770,7 @@ footer .bottom-footer span {
 .time-line .main-menu .tab-timeline .img-detail {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 100%;
-  max-width: 428px;
+  max-width: 400px;
   height: 215px;
   object-fit: cover;
 }
@@ -815,7 +815,34 @@ footer .bottom-footer span {
   color: #000000;
 }
 
+.tour-chi-tiet-map .tour-chi-tiet-body {
+  background: #ffffff;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+}
+.tour-chi-tiet-map .tour-chi-tiet-body img {
+  margin-right: 10px;
+}
+.tour-chi-tiet-map .tour-chi-tiet-body .card-detail {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3f4042;
+}
+.tour-chi-tiet-map .tour-chi-tiet-body .button-group .button-outline-primary-custom {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3f4042;
+}
+
 @media screen and (max-width: 991.98px) {
+  .time-line .main-menu .tab-timeline .img-detail {
+    display: block;
+    width: 100%;
+  }
   .time-line .main-menu .tab-timeline .img-detail {
     border-radius: 5px;
   }
