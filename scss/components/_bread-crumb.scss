@@ -1,0 +1,22 @@
+.breadcrumb-custom {
+    li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 38px;
+        /* identical to box height, or 173% */
+        /* Neural-1 */
+        color: #3f4042;
+        a {
+            font-style: normal;
+            font-weight: 400;
+            color: #3f4042;
+        }
+    }
+}
+
+@include responsive($md){
+    .breadcrumb-custom li{
+        font-size: 20px;
+    }
+}

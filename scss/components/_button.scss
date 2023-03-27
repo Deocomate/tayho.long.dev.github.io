@@ -10,8 +10,20 @@
     border: 2px solid #188181;
     border-radius: 10px;
     padding: 12px 24px;
+    border: 1 solid transparent;
     &:hover{
         background-color: #188181;
         color: white;
+    }
+}
+.button-submit-custom {
+    background: #188181;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 70px;
+    border: 2px solid transparent;
+    &:hover{
+        border:2px solid #188181;
+
     }
 }
