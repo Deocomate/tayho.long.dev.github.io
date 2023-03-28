@@ -21,11 +21,27 @@ $(document).ready(function () {
         prevArrow: "<button type='button' class='slick-prev'><img src='./assets/lou_icon/prev-btn.svg'/></button>",
         nextArrow: "<button type='button' class='slick-next'><img src='./assets/lou_icon/next-btn.svg'/></button>",
     });
-    $(".edit-photo").click(function (e) { 
+    $(".edit-photo").click(function (e) {
         $(".file-edit-img")[0].click()
         // console.log(1);
     });
-    $(".switch").click(function (e) { 
+    $(".switch").click(function (e) {
         $(this).find("div").toggleClass("off")
     });
+
+
+
+    // Tăng giảm input
+    $('.plus-btn').click(function () {
+        var inputEl = $(this).parent().find('input[type="number"]');
+        inputEl.val(parseInt(inputEl.val()) + 1);
+    });
+
+    $('.minus-btn').click(function () {
+        var inputEl = $(this).parent().find('input[type="number"]');
+        if (inputEl.val() > 0) {
+            inputEl.val(parseInt(inputEl.val()) - 1);
+        }
+    });
+
 });

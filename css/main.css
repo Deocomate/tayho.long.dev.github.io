@@ -410,6 +410,52 @@
   border-radius: 10px;
 }
 
+#modal-book-room .modal-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #084441;
+}
+#modal-book-room .form-group-flex label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.4px;
+  line-height: 34px;
+  color: #3f4042;
+  white-space: nowrap;
+  width: 30%;
+}
+#modal-book-room .form-group-flex label + input,
+#modal-book-room .form-group-flex label + textarea,
+#modal-book-room .form-group-flex label + .date-time-input,
+#modal-book-room .form-group-flex label + .range-number {
+  width: 70%;
+}
+#modal-book-room .form-group-flex .date-time-input .time-input {
+  background: #ffffff;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 8px;
+  padding: 5px;
+  width: 20%;
+}
+#modal-book-room .form-group-flex .date-time-input .date-input {
+  background: #ffffff;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 8px;
+  padding: 5px;
+  width: 75%;
+}
+#modal-book-room .form-group-flex .range-number input {
+  width: 65%;
+}
+#modal-book-room .form-group-flex .range-number button {
+  width: 15%;
+  background: transparent;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
 header .top .search-input {
   background-color: white;
   display: flex;
@@ -972,4 +1018,51 @@ footer .bottom-footer span {
   font-weight: 400;
   font-size: 25px;
   color: #3f4042;
+}
+
+.danh-sach-phong .head-line h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.8px;
+  text-transform: uppercase;
+  color: #3f4042;
+}
+.danh-sach-phong .danh-sach-phong-item .room-detail {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.danh-sach-phong .danh-sach-phong-item .room-detail h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.8px;
+  color: #3f4042;
+}
+.danh-sach-phong .danh-sach-phong-item .room-detail .roon-service span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.6px;
+  color: #126b66;
+}
+.danh-sach-phong .danh-sach-phong-item .room-price .badge-discount {
+  background-color: #126b66;
+}
+.danh-sach-phong .danh-sach-phong-item .room-price del {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.4px;
+  color: #3f4042;
+  line-height: 34px;
+}
+.danh-sach-phong .danh-sach-phong-item .room-price .price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.8px;
+  color: #126b66;
+  line-height: 30px;
+}
+.danh-sach-phong .danh-sach-phong-item .room-price .button-submit-custom {
+  padding: 5px 50px;
+}
+.danh-sach-phong .danh-sach-phong-item .border-right-line {
+  border-right: 1px solid #126B66;
 }/*# sourceMappingURL=main.css.map */

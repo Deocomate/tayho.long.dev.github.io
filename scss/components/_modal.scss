@@ -24,3 +24,59 @@
         }
     }
 }
+#modal-book-room {
+    .modal-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: #084441;
+    }
+    .form-group-flex {
+        label {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22.4px;
+            line-height: 34px;
+            color: #3f4042;
+            white-space: nowrap;
+            width: 30%;
+        }
+        label + input,
+        label + textarea,
+        label + .date-time-input,
+        label + .range-number {
+            width: 70%;
+        }
+        .date-time-input {
+            * {
+                // width: 100%;
+            }
+            .time-input {
+                background: #ffffff;
+                border: 1px solid rgba(63, 64, 66, 0.5);
+                border-radius: 8px;
+                padding: 5px;
+                width: 20%;
+            }
+            .date-input {
+                background: #ffffff;
+                border: 1px solid rgba(63, 64, 66, 0.5);
+                border-radius: 8px;
+                padding: 5px;
+                width: 75%;
+            }
+        }
+        .range-number {
+            input{
+                width: 65%;
+            }
+            button {
+                width: 15%;
+                background: transparent;
+                border: 1px solid rgba(63, 64, 66, 0.5);
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.danh-sach-phong {
+    .head-line {
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28.8px;
+            text-transform: uppercase;
+            color: #3f4042;
+        }
+    }
+    .danh-sach-phong-item {
+        .room-detail {
+            max-width: 450px;
+            margin: 0 auto;
+            h6 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28.8px;
+                color: #3f4042;
+            }
+            .roon-service {
+                span {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15.6px;
+                    color: #126b66;
+                }
+            }
+        }
+        .room-price {
+            .badge-discount {
+                background-color: #126b66;
+            }
+            del {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22.4px;
+                color: #3f4042;
+                line-height: 34px;
+            }
+            .price {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28.8px;
+                color: #126b66;
+                line-height: 30px;
+            }
+            .button-submit-custom {
+                padding: 5px 50px;
+            }
+        }
+        .border-right-line{
+            border-right: 1px solid #126B66;
+        }
+    }
+
+}
