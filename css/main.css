@@ -176,6 +176,23 @@
   border-radius: 20px;
 }
 
+.card-diem-den-yeu-thich-contain {
+  color: #3f4042;
+  text-decoration: none;
+}
+.card-diem-den-yeu-thich-contain h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #3f4042;
+}
+.card-diem-den-yeu-thich-contain .card-num-location span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3f4042;
+}
+
 @media screen and (max-width: 767.98px) {
   .card-event h5 {
     font-size: 25px;
@@ -248,6 +265,29 @@
 }
 .form-group-user .input-password input:focus {
   box-shadow: none;
+}
+
+.form-input-search {
+  transform: translateY(-50%);
+  background: #deecea;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+.form-input-search img {
+  width: 22px;
+}
+.form-input-search input {
+  border: transparent;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(24, 129, 129, 0.54);
+}
+.form-input-search input:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .banner-top-style-1 {
@@ -347,6 +387,29 @@
     font-size: 20px;
   }
 }
+#modal-book-tour .modal-dialog {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+#modal-book-tour .modal-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000;
+}
+#modal-book-tour .form-custom-1 label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000;
+}
+#modal-book-tour .form-custom-1 input {
+  background: #ffffff;
+  border: 1px solid rgba(63, 64, 66, 0.5);
+  border-radius: 10px;
+}
+
 header .top .search-input {
   background-color: white;
   display: flex;
@@ -894,4 +957,19 @@ footer .bottom-footer span {
 }
 .form-main-position .form-search-tour {
   transform: translateY(-40px);
+}
+
+#diem-den-yeu-thich .head h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #3f4042;
+  margin-bottom: 5px;
+}
+#diem-den-yeu-thich .head p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #3f4042;
 }/*# sourceMappingURL=main.css.map */
